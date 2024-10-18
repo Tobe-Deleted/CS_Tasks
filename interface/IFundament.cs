@@ -24,4 +24,22 @@ public interface IFundament
     /// <param name="fact">a interesting fact</param>
     /// <returns>a fact of type: string</returns>
     string GetAInterestingFact(string fact);
+
+/// <summary>
+/// Writes out the 10 first digits of the Fibonnaci series
+/// </summary>
+    public void PrintFibonnaciSeries();
+
+    /// <summary>
+    /// Reverses given string
+    /// </summary>
+    /// <returns>str reversed</returns>
+    public string ReverseString(string str);
+
+    /// <summary>
+    /// gives the factorial of a given number
+    /// </summary>
+    /// <param name="n"></param>
+    /// <returns>n!</returns>
+    public int RecursiveFactorial(int n);
 }

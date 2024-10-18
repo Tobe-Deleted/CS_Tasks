@@ -1,3 +1,6 @@
+using System.Collections.Generic;
+using System.Linq;
+using System;
 public class Fundament : IFundament
 {
     public void CheckOddOrEven(double a)
@@ -42,7 +45,9 @@ public class Fundament : IFundament
     public string ReverseString(string str)
     {
         // TODO: reverse the given string
-        return "";
+        char[] charArray = str.ToCharArray();
+        Array.Reverse(charArray);
+        return string.Join("", charArray);
     }
 
     public int RecursiveFactorial(int n)
@@ -53,7 +58,7 @@ public class Fundament : IFundament
         {
             return 1;
         }
-        return n;
+        return n * RecursiveFactorial(n - 1);
     }
 
 
