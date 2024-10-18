@@ -9,20 +9,16 @@ public class Fundament : IFundament
         else Console.WriteLine("Odd");
     }
 
-    public string GetAInterestingFact(string fact)
-    {
-        return "The universe is estimated to be 13.4 billion years old";
-    }
+    public string GetAInterestingFact(string fact) => "The universe is estimated to be 13.4 billion years old";
+    
 
-    public void SumTwoNumbers(int a, int b)
+    public void SumTwoNumbers(int a, int b) 
     {
         Console.WriteLine(a + b);
     }
 
-    public double SumTwoNumbersOfGivenType(double a, double b)
-    {
-        return a + b;
-    }
+    public double SumTwoNumbersOfGivenType(double a, double b) =>  a + b;
+    
 
 
     // Extra challenges
@@ -42,13 +38,9 @@ public class Fundament : IFundament
         }
     }
 
-    public string ReverseString(string str)
-    {
+    public string ReverseString(string str) => string.Concat(str.Reverse());
         // TODO: reverse the given string
-        char[] charArray = str.ToCharArray();
-        Array.Reverse(charArray);
-        return string.Join("", charArray);
-    }
+    
 
     public int RecursiveFactorial(int n)
     {
