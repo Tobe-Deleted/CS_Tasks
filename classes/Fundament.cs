@@ -2,22 +2,23 @@ public class Fundament : IFundament
 {
     public void CheckOddOrEven(double a)
     {
-        throw new NotImplementedException();
+        if (a%2==0) Console.WriteLine("Even");
+        else Console.WriteLine("Odd");
     }
 
     public string GetAInterestingFact(string fact)
     {
-        throw new NotImplementedException();
+        return "The universe is estimated to be 13.4 billion years old";
     }
 
-    public void SumTwoNumbers()
+    public void SumTwoNumbers(int a, int b)
     {
-        throw new NotImplementedException();
+        Console.WriteLine(a + b);
     }
 
     public double SumTwoNumbersOfGivenType(double a, double b)
     {
-        throw new NotImplementedException();
+        return a + b;
     }
 
 
@@ -29,12 +30,13 @@ public class Fundament : IFundament
         int a = 0;
         int b = 1;
         int c;
-
-        /* 
-        c = a + b
-        a = b
-        b = c
-        */
+        for (int i = 0; i < 10; i++)
+        {
+            Console.WriteLine(a);
+            c = a + b;
+            a = b;
+            b = c;
+        }
     }
 
     public string ReverseString(string str)
