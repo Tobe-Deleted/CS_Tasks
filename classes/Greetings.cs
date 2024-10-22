@@ -1,5 +1,7 @@
 // Example class Greetings, this implements the example interface IGreetings.cs
 
+using System.Runtime.Versioning;
+
 public class Greetings : IGreetings
 {
     /// <summary>
@@ -36,5 +38,10 @@ public class Greetings : IGreetings
     public void YoiTsuitachi()
     {
         Console.WriteLine("Konichiwa!");
+    }
+
+    public void GermanHello()
+    {
+        Console.WriteLine("Guten Tag!");
     }
 }

@@ -9,10 +9,10 @@ public class Fundament : IFundament
         else Console.WriteLine("Odd");
     }
 
-    public string GetAInterestingFact(string fact)
+    public string GetAInterestingFact()
     {
     Random rnd = new Random();
-    int n = rnd.Next(0-10);
+    int n = rnd.Next(0, 10);
     switch(n)
     {
         case 0:
@@ -26,7 +26,7 @@ public class Fundament : IFundament
         case 4:
             return "Javascript was named Javascript because Java was a popular language at the time. They have nothing to do with each other";
         case 5:
-            return "The field of quantum physics was established because they discovered that a particle could exist in two different states at the same time";
+            return "The field of quantum physics was established after we discovered that a particle could exist in two different states at the same time";
         case 6:
             return "In South Korea, 14th of April is unofficially celebrated as valentines day for single people";
         case 7:
