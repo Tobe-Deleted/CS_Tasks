@@ -28,7 +28,7 @@ public interface IFundament
 /// <summary>
 /// Writes out the 10 first digits of the Fibonnaci series
 /// </summary>
-    public void PrintFibonnaciSeries();
+    public int PrintFibonnaciSeries(int n);
 
     /// <summary>
     /// Reverses given string

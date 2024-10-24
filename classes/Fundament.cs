@@ -5,14 +5,15 @@ public class Fundament : IFundament
 {
     public void CheckOddOrEven(double a)
     {
-        if (a % 2 == 0) Console.WriteLine("Even");
-        else Console.WriteLine("Odd");
+        if (a % 2 == 0) Console.WriteLine(a + "is Even");
+        else Console.WriteLine(a + " is Odd");
     }
 
     public string GetAInterestingFact()
     {
     Random rnd = new Random();
     int n = rnd.Next(0, 10);
+    Console.Write("Interesting fact: ");
     switch(n)
     {
         case 0:
@@ -51,20 +52,17 @@ public class Fundament : IFundament
 
     // Extra challenges
 
-    public void PrintFibonnaciSeries()
+    public int PrintFibonnaciSeries(int n)
     {
         // TODO: Implement the Fibonacci sequence
-        int a = 0;
-        int b = 1;
-        int c;
-        for (int i = 0; i < 10; i++)
+        
+        if (n <= 1) 
         {
-            Console.WriteLine(a);
-            c = a + b;
-            a = b;
-            b = c;
+            return n;
         }
-    }
+		return PrintFibonnaciSeries(n - 1) + PrintFibonnaciSeries(n -2);
+	}
+    
 
     public string ReverseString(string str) => string.Concat(str.Reverse());
         // TODO: reverse the given string
